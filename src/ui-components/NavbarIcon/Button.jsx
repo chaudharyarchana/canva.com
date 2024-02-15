@@ -1,7 +1,7 @@
 const Button = ({ name }) => {
   return (
     <>
-      <button className="bg-purple-600 text-white py-2 px-4 rounded-md capitalize font-semibold">
+      <button className="bg-purple-600 text-white h-10 px-4 rounded-md capitalize font-semibold">
         {name}
       </button>
     </>
