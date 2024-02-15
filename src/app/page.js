@@ -1,7 +1,10 @@
-const Page = () =>{
-  return (
-    <h1>Hello next</h1>
-  )
-}
+import Navbar from "@/components/Navbar";
 
-export default Page
+const Page = () => {
+  return (
+    <>
+      <Navbar />
+    </>
+  );
+};
+export default Page;
