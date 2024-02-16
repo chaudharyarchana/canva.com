@@ -7,11 +7,12 @@ import Projecticon from "@/ui-components/SidebarIcon/Projecticon";
 import SideBtn from "@/ui-components/SidebarIcon/SideBtn";
 import Trashicon from "@/ui-components/SidebarIcon/Trashicon";
 import Bellicon from "@/ui-components/NavbarIcon/Bellicon"
+import Link from "next/link";
 
 const Sidebar = () => {
   return (
     <>
-    <div className="w-1/5 pt-5 pl-4 ">
+    <div className="w-1/3 pt-5 pl-4 ">
         <div className="flex items-center">
             <Profileicon />
             <h1 className="font-medium text-l text-gray-800 ml-2">Archana Kumari's Team</h1>
@@ -19,12 +20,12 @@ const Sidebar = () => {
         <div className="bg-gray-100 justify-around rounded-md font-medium h-10 flex items-center mt-4">
             <h1>Get Canva Pro</h1>
         </div>
-        <SideBtn Icon={Homeicon} heading="Home" active="true"/>
+       <Link href="/"> <SideBtn Icon={Homeicon} heading="Home" active="true"/> </Link>
 
         <div className="overflow-y-scroll h-40 mt-3 mb-2 shadow-inner">
-        <SideBtn Icon={Projecticon} heading="Projects"/>
-        <SideBtn Icon={Appicon} heading="Apps"/>
-        <SideBtn Icon={Settingicon} heading="Settings"/>
+       <Link href="/projects"> <SideBtn Icon={Projecticon} heading="Projects"/> </Link>
+        <SideBtn Icon={Appicon} heading="Apps"/> 
+        <SideBtn Icon={Settingicon} heading="Settings"/> 
         <SideBtn Icon={Bellicon} heading="Notifications"/>
 
         </div>

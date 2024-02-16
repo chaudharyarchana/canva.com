@@ -1,14 +1,10 @@
-"use client"
-import Navbar from "@/components/Navbar";
-import Sidebar from "@/components/Sidebar";
-import { useState } from "react";
+import Home from "@/components/Home";
+
 
 const Page = () => {
-  const[toggle,setToggle] = useState(true)
   return (
     <>
-      <Navbar onclick={()=>setToggle(!toggle)}/>
-      {toggle && <Sidebar/>}
+    <Home/>
     </>
   );
 };
