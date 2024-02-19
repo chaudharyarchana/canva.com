@@ -12,7 +12,7 @@ import Link from "next/link";
 const Sidebar = () => {
   return (
     <>
-    <div className="w-1/3 pt-5 pl-4 ">
+    <div className=" pt-5 pl-4 " style={{width:"20vw"}}>
         <div className="flex items-center">
             <Profileicon />
             <h1 className="font-medium text-l text-gray-800 ml-2">Archana Kumari's Team</h1>
@@ -23,7 +23,7 @@ const Sidebar = () => {
        <Link href="/"> <SideBtn Icon={Homeicon} heading="Home" active="true"/> </Link>
 
         <div className="overflow-y-scroll h-40 mt-3 mb-2 shadow-inner">
-       <Link href="/projects"> <SideBtn Icon={Projecticon} heading="Projects"/> </Link>
+        <SideBtn Icon={Projecticon} heading="Projects"/> 
         <SideBtn Icon={Appicon} heading="Apps"/> 
         <SideBtn Icon={Settingicon} heading="Settings"/> 
         <SideBtn Icon={Bellicon} heading="Notifications"/>

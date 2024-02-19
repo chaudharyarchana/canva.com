@@ -6,9 +6,9 @@ import SearchBar from "./SearchBar";
 const Banner = () => {
   return (
     <>
-    <div className=" relative w-full h-60 mt-5  bg-gradient-to-r from-cyan-500 to-purple-600 mx-8 rounded-md">
+    <div className=" relative  h-60 mt-5  bg-gradient-to-r from-cyan-500 to-purple-600 ml-8 rounded-md" style={{width:"73vw"}}>
         <div className="">
-        <h1 className="text-white font-bold text-3xl text-center mt-5">What will you design today ?</h1>
+        <h1 className="text-white font-bold text-3xl text-center mt-5 pt-6">What will you design today ?</h1>
         <div className=" absolute top-3 right-3">
         <Button name="Custom size" style="mr-2 bg-white bg-opacity-10"/>
         <Button name="Upload" style=" bg-white bg-opacity-10"/>
